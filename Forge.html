@@ -1,0 +1,175 @@
+<div style="text-align: center; margin: 0 0 20px 0;">
+    <a href="https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortBy=relevancy&gameVersionTypeId=1" target="_blank">
+        <img src="https://nolifeking85.tv/content/images/size/w600/2022/04/welcome-2.png" alt="Welcome to CurseForge" style="max-width: 50%; height: auto; border: 2px solid #ccc; border-radius: 8px;">
+    </a>
+</div>
+<style>
+    .curseforge-img {
+        border: 12px solid black !important;
+        border-radius: 25px !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    }
+</style>
+<script>
+    // Add class to the image
+    document.querySelector('img').classList.add('curseforge-img');
+</script>
+<style>
+    .curseforge-img {
+        max-width: 90% !important; /* Increased from 50% */
+        height: auto !important;
+    }
+</style>
+<style>
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 250px;
+        background-color: rgb(59, 15, 15);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3),
+                    8px 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Adjust main content to make room for sidebar */
+    body {
+        margin-left: 250px;
+    }
+</style>
+<div class="sidebar">
+    <!-- Sidebar content will go here -->
+    <style>
+        .mod-title {
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 15px;
+            background-color: #4a1111;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .mod-list {
+            background-color: #2e0a0a;
+            border-radius: 5px;
+            padding: 5px 0;
+            display: none;
+        }
+
+        .mod-list a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: block;
+        }
+
+        .mod-list a:hover {
+            background-color: #4a1111;
+        }
+    </style>
+
+    <div style="text-align: center;">
+        <span class="mod-title">MODS</span>
+    </div>
+    <div class="mod-list">
+        <a href="https://www.curseforge.com/minecraft/mc-mods/jei/files/all?page=1&pageSize=20" target="_blank">JEI</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/appleskin" target="_blank">AppleSkin</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/entityculling" target="_blank">Entity Culling</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap" target="_blank">Xaero's Minimap</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/spark" target="_blank">Spark</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map" target="_blank">Xaero's World Map</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/not-enough-animations" target="_blank">Not Enough Animations</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty" target="_blank">Biomes O' Plenty</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/alexs-mobs" target="_blank">Alex's Mobs</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/create" target="_blank">Create</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered" target="_blank">Sound Physics Remastered</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/chat-heads" target="_blank">Chat Heads</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/ambientsounds" target="_blank">Ambient Sounds</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/visuality" target="_blank">Visuality</a>
+    </div>
+
+
+    <script>
+        // Add click handler to mod title
+        document.querySelector('.mod-title').addEventListener('click', function() {
+            const modList = document.querySelector('.mod-list');
+            // Toggle visibility
+            if (modList.style.display === 'none' || !modList.style.display) {
+                modList.style.display = 'block';
+            } else {
+                modList.style.display = 'none';
+            }
+        });
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, rgb(77, 75, 80), rgb(45, 11, 11));
+        }
+    </style>
+    <div style="text-align: center; margin: 20px auto; font-family: 'Comic Sans MS', cursive; font-size: 24px; color: #ffffff; text-shadow: 6px 6px 12px rgba(0,0,0,0.7); position: absolute; left: 50%; top: 70%; transform: translate(-50%, -50%);">
+        Welcome to Forge!
+    </div>
+    <div class="mod-title install-steps" style="margin-top: 20px; cursor: pointer;">How to Install Mods</div>
+    <div class="mod-list steps-list" style="display: none;">
+        <p>
+            1. Download and install Forge from <a href="https://files.minecraftforge.net/net/minecraftforge/forge/" target="_blank">https://files.minecraftforge.net/</a><br><br>
+            2. Download all the mods you want from the links above<br><br>
+            3. Press Windows + R, type %appdata%, and press Enter<br><br>
+            4. Go to .minecraft folder<br><br>
+            5. Create a folder called "mods" if it doesn't exist<br><br>
+            6. Move all downloaded mod files (.jar) into the mods folder<br><br>
+            7. Launch Minecraft with the Forge profile
+        </p>
+    </div>
+    <script>
+        // Add click handler for installation steps
+        document.querySelector('.install-steps').addEventListener('click', function() {
+            const stepsList = document.querySelector('.steps-list');
+            // Toggle visibility
+            if (stepsList.style.display === 'none') {
+                stepsList.style.display = 'block';
+            } else {
+                stepsList.style.display = 'none';
+            }
+        });
+
+        // Make steps white and comic sans
+        document.querySelector('.steps-list').style.color = 'white';
+        document.querySelector('.steps-list').style.fontFamily = '"Comic Sans MS", cursive';
+    </script>
+    <style>
+        .fabric-button {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: block;
+            background-color: #242326;
+            transition: background-color 0.2s;
+        }
+
+        .fabric-button:hover {
+            background-color: #363538;
+        }
+    </style>
+    <script>
+        // Create fabric button with matching style
+        const fabricButton = document.createElement('div');
+        fabricButton.className = 'fabric-button';
+        fabricButton.textContent = 'Switch to Fabric';
+        fabricButton.style.color = '#ffffff';
+        
+        // Add click handler
+        fabricButton.addEventListener('click', function() {
+            window.location.href = 'modding.html';
+        });
+
+        // Add to sidebar
+        document.querySelector('.sidebar').appendChild(fabricButton);
+  </script>
